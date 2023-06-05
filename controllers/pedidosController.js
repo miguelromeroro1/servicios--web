@@ -1,7 +1,7 @@
 // Importar los modelos y dependencias necesarias
-const Pedido = require('../models/pedido');
-const Usuario = require('../models/usuario');
-const Producto = require('../models/producto');
+const Pedido = require('../../models/pedido');
+const Usuario = require('../../models/usuario');
+const Producto = require('../../models/producto');
 
 // Obtener todos los pedidos
 exports.getPedidos = async (req, res) => {

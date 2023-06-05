@@ -1,6 +1,6 @@
 // Importar los modelos y dependencias necesarias
-const Carrito = require('../models/carrito');
-const Producto = require('../models/producto');
+const Carrito = require('../../models/carrito');
+const Producto = require('../../models/producto');
 
 // Obtener el carrito de un usuario
 exports.getCarrito = async (req, res) => {

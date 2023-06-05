@@ -1,5 +1,5 @@
 // Importar el modelo y dependencias necesarias
-const Producto = require('../models/producto');
+const Producto = require('../../models/producto');
 
 // Obtener todos los productos
 exports.getProductos = async (req, res) => {

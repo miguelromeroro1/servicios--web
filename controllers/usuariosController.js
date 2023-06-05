@@ -1,5 +1,5 @@
 // Importar el modelo y dependencias necesarias
-const Usuario = require('../models/usuario');
+const Usuario = require('../../models/usuario');
 
 // Obtener todos los usuarios
 exports.getUsuarios = async (req, res) => {

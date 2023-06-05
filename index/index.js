@@ -13,12 +13,12 @@ const usuariosRoutes = require('./routes/usuariosRoutes');
 app.use(express.json());
 
 // Rutas
-app.use('/api', authRoutes);
-app.use('/api', carritoRoutes);
-app.use('/api', categoriaRoutes);
-app.use('/api', pedidosRoutes);
-app.use('/api', productosRoutes);
-app.use('/api', usuariosRoutes);
+app.use('/SERVICIOSWEB', authRoutes);
+app.use('SERVICIOSWEB', carritoRoutes);
+app.use('/SERVICIOSWEB', categoriaRoutes);
+app.use('/SERVICIOSWEB', pedidosRoutes);
+app.use('/SERVICIOSWEB', productosRoutes);
+app.use('/SERVICIOSWEB', usuariosRoutes);
 
 // Puerto de escucha
 const PORT = process.env.PORT || 3000;

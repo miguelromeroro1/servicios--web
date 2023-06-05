@@ -5,13 +5,25 @@ const port = 3000;
 // Middlewares
 app.use(express.json());
 
+// Importar el modelo de usuario
+const Usuario = require('./models/usuario');
+
+// Importar las rutas
+const categoriasRoutes = require('./routes/categoriasRoutes');
+const usuariosRoutes = require('./routes/usuariosRoutes');
+const pedidosRoutes = require('./routes/pedidosRoutes');
+const carritoRoutes = require('./routes/carritoRoutes');
+const authRoutes = require('./routes/authRoutes');
+
 // Rutas
-app.use('/api/productos', require('./api/routes/productosRoutes'));
-app.use('/api/categorias', require('./api/routes/categoriasRoutes'));
-app.use('/api/usuarios', require('./api/routes/usuariosRoutes'));
-app.use('/api/pedidos', require('./api/routes/pedidosRoutes'));
-app.use('/api/carrito', require('./api/routes/carritoRoutes'));
-app.use('/api/auth', require('./api/routes/authRoutes'));
+app.use('/serviciosweb/categorias', categoriasRoutes);
+app.use('/serviciosweb/usuarios', usuariosRoutes);
+app.use('/serviciosweb/pedidos', pedidosRoutes);
+app.use('/serviciosweb/carrito', carritoRoutes);
+app.use('/serviciosweb/auth', authRoutes);
+
+// Rutas para productos
+app.use('/serviciosweb/productos', require('./routes/productosRoutes'));
 
 // Ruta de inicio
 app.get('/', (req, res) => {

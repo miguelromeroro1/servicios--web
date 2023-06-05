@@ -1,12 +1,13 @@
 const express = require('express');
 const router = express.Router();
-const categoriaController = require('../controllers/categoriaController');
+const categoriaController = require('../controllers/categoriasController.js');
 
 // Ruta para obtener todas las categorías
-router.get('/categorias', categoriaController.obtenerCategorias);
+router.get('/categorias', categoriaController.getCategorias);
 
 // Ruta para obtener una categoría por su ID
-router.get('/categorias/:categoriaId', categoriaController.obtenerCategoriaPorId);
+router.get('/categorias', categoriaController.getCategorias);
+
 
 // Ruta para crear una nueva categoría
 router.post('/categorias', categoriaController.crearCategoria);

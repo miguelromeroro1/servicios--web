@@ -1,5 +1,5 @@
 // Importar los modelos y dependencias necesarias
-const Usuario = require('../models/usuario');
+const Usuario = require('../../models/usuario');
 const bcrypt = require('bcrypt');
 
 // Función para registrar un nuevo usuario

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const carritoController = require('../controllers/carritoController');
+const carritoController = require('../../controllers/carritoController');
 
 // Ruta para obtener el carrito de un usuario
 router.get('/carrito', carritoController.obtenerCarrito);

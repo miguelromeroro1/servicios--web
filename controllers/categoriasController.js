@@ -1,6 +1,7 @@
 // Importar el modelo y dependencias necesarias
 const Categoria = require('../models/categoria');
 
+
 // Obtener todas las categorías
 exports.getCategorias = async (req, res) => {
   try {
